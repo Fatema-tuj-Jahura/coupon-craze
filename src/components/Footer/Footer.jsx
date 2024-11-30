@@ -5,11 +5,11 @@ const Footer = () => {
     return (
         <footer className="bg-green-800 text-white py-6">
             <div className="p-8 ">
-                <div className='flex  justify-between items-center '>
+                <div className='flex flex-row justify-between items-center '>
                     <div className='flex flex-col space-y-2 pb-4'>
                         <h5 className='text-lg font-bold'>Company</h5>
                         <div className="w-1/2">
-                          <hr className="border-red-700" />
+                          <hr className="border-yellow-400" />
                         </div>
                         <a className='text-xs text-gray-50' href="">About Us</a>
                         <a className='text-xs text-gray-50' href=''>Our services</a>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className='flex flex-col space-y-2 pb-4'>
                         <h5 className='text-lg font-bold'>Get Help</h5>
                         <div className="w-1/2">
-                          <hr className="border-red-700" />
+                          <hr className="border-yellow-400" />
                         </div>
                         <a className='text-xs text-gray-50' href="">FAQ</a>
                         <a className='text-xs text-gray-50' href=''>Shipping</a>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <div className='flex flex-col space-y-2 pb-4'>
                         <h5 className='text-lg font-bold'>Online Shop</h5>
                         <div className="w-1/2">
-                          <hr className="border-red-700" />
+                          <hr className="border-yellow-400" />
                         </div>
                         <a className='text-xs text-gray-50' href="">Watch</a>
                         <a className='text-xs text-gray-50' href=''>Shoes</a>
