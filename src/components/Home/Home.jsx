@@ -1,10 +1,12 @@
 import React from 'react';
-
+import StaticSlider from "../StaticSlider/StaticSlider"
+import CouponBanner from '../CouponBanner/CouponBanner';
 const Home = () => {
     return (
         <div>
-            <h1 className=''>Home</h1>
-        
+          <CouponBanner></CouponBanner>
+          <StaticSlider></StaticSlider>  
+          
         </div>
     );
 };
