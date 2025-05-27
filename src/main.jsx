@@ -10,7 +10,9 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './components/Provider/AuthProvider';
-
+import Brands from './components/Brands/Brands';
+import Brand from './components/Brand/Brand';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +21,17 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+      },
+      {
+        path: '/brands',
+        element: <Brands></Brands>,
+      },
+      {
+        path: '/brand/:id',
+        element: <PrivateRoute>
+          <Brand></Brand>
+        </PrivateRoute>,
+        loader: () => fetch('/CouponsData.json'),
       },
       {
         path: 'login',

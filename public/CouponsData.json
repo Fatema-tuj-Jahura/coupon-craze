@@ -1,0 +1,162 @@
+[
+    {
+      "_id": "1a2b3c4d5e6f",
+      "brand_name": "Nike",
+      "description": "High-quality sportswear and sneakers.",
+      "brand_logo": "https://i.ibb.co/MxXgnTbd/Nike.jpg",
+      "rating": 4.8,
+      "coupons": [
+        {
+          "coupon_code": "NIKE20",
+          "description": "20% off on all sports shoes",
+          "expiry_date": "2025-06-30",
+          "condition": "Minimum purchase of $50 required",
+          "coupon_type": "Percentage Discount"
+        },
+        {
+          "coupon_code": "FREESHIP",
+          "description": "Free shipping on orders above $75",
+          "expiry_date": "2025-07-15",
+          "condition": "Valid for selected locations",
+          "coupon_type": "Free Shipping"
+        }
+      ],
+      "shop_Link": "https://www.nike.com",
+      "category": "Sportswear",
+      "isSaleOn": true
+    },
+    {
+      "_id": "2f3g4h5i6j7k",
+      "brand_name": "Adidas",
+      "description": "Trendy and comfortable sports gear.",
+      "brand_logo": "https://i.ibb.co/Wps1JHTC/adidas.jpg",
+      "rating": 4.7,
+      "coupons": [
+        {
+          "coupon_code": "ADIDAS15",
+          "description": "15% off on all apparel",
+          "expiry_date": "2025-05-20",
+          "condition": "Applicable on new arrivals",
+          "coupon_type": "Percentage Discount"
+        }
+      ],
+      "shop_Link": "https://www.adidas.com",
+      "category": "Sportswear",
+      "isSaleOn": false
+    },
+    {
+      "_id": "3k4l5m6n7o8p",
+      "brand_name": "Amazon",
+      "description": "Your go-to online shopping platform.",
+      "brand_logo": "https://i.ibb.co/0pHbH81j/amazon.jpg",
+      "rating": 4.9,
+      "coupons": [
+        {
+          "coupon_code": "AMZ10",
+          "description": "Flat 10% off on electronics",
+          "expiry_date": "2025-08-10",
+          "condition": "Valid for selected brands",
+          "coupon_type": "Flat Discount"
+        }
+      ],
+      "shop_Link": "https://www.amazon.com",
+      "category": "E-commerce",
+      "isSaleOn": true
+    },
+    {
+      "_id": "4p5q6r7s8t9u",
+      "brand_name": "McDonald's",
+      "description": "Delicious fast food for all.",
+      "brand_logo": "https://i.ibb.co/fzJRLhxS/mcdonald.jpg",
+      "rating": 4.6,
+      "coupons": [
+        {
+          "coupon_code": "MCDEAL",
+          "description": "Buy 1 Get 1 Free on selected meals",
+          "expiry_date": "2025-04-30",
+          "condition": "Valid for dine-in only",
+          "coupon_type": "BOGO"
+        }
+      ],
+      "shop_Link": "https://www.mcdonalds.com",
+      "category": "Food & Beverages",
+      "isSaleOn": false
+    },
+    {
+      "_id": "5v6w7x8y9z0a",
+      "brand_name": "Sephora",
+      "description": "Premium beauty and skincare products.",
+      "brand_logo": "https://i.ibb.co/xSZWTVBD/sephora.jpg",
+      "rating": 4.8,
+      "coupons": [
+        {
+          "coupon_code": "SEPHORA25",
+          "description": "25% off on all makeup products",
+          "expiry_date": "2025-09-01",
+          "condition": "Members-only deal",
+          "coupon_type": "Percentage Discount"
+        }
+      ],
+      "shop_Link": "https://www.sephora.com",
+      "category": "Beauty",
+      "isSaleOn": true
+    },
+    {
+      "_id": "6b7c8d9e0f1g",
+      "brand_name": "Zara",
+      "description": "Trendy fashion for men and women.",
+      "brand_logo": "https://i.ibb.co/gFJBNY5g/Zara.jpg",
+      "rating": 4.5,
+      "coupons": [
+        {
+          "coupon_code": "ZARA10",
+          "description": "10% off on new collections",
+          "expiry_date": "2025-06-15",
+          "condition": "Applicable for first-time customers",
+          "coupon_type": "Percentage Discount"
+        }
+      ],
+      "shop_Link": "https://www.zara.com",
+      "category": "Fashion",
+      "isSaleOn": false
+    },
+    {
+      "_id": "7h8i9j0k1l2m",
+      "brand_name": "Starbucks",
+      "description": "Your favorite coffee and beverages.",
+      "brand_logo": "https://i.ibb.co/mV7cV3kB/starbucks.jpg",
+      "rating": 4.7,
+      "coupons": [
+        {
+          "coupon_code": "COFFEE50",
+          "description": "50% off on second coffee",
+          "expiry_date": "2025-07-20",
+          "condition": "Applicable on all drinks",
+          "coupon_type": "BOGO"
+        }
+      ],
+      "shop_Link": "https://www.starbucks.com",
+      "category": "Food & Beverages",
+      "isSaleOn": true
+    },
+    {
+      "_id": "8n9o0p1q2r3s",
+      "brand_name": "Apple",
+      "description": "Cutting-edge technology and gadgets.",
+      "brand_logo": "https://i.ibb.co/LX9g7jRD/apple.jpg",
+      "rating": 4.9,
+      "coupons": [
+        {
+          "coupon_code": "APPLE100",
+          "description": "$100 off on MacBook Pro",
+          "expiry_date": "2025-10-01",
+          "condition": "Limited stock available",
+          "coupon_type": "Flat Discount"
+        }
+      ],
+      "shop_Link": "https://www.apple.com",
+      "category": "Electronics",
+      "isSaleOn": false
+    }
+  ]
+  

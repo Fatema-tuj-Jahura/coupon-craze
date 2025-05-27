@@ -2,11 +2,11 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import logo from '../../assets/Logo.png';
-import { FaHome, FaBuilding, FaUser, FaInfoCircle, FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome, FaBuilding, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  const [isOpen, setIsOpen] = useState(false); // Mobile menu state
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLogOut = () => {
     logOut();
@@ -20,14 +20,36 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="h-10" />
         </Link>
 
-        {/* Welcome Message (Always visible) */}
-        {user && (
-          <div className="text-lg font-semibold">
-            Welcome, {user.displayName}
-          </div>
-        )}
+        {/* Mobile User Info (always visible in mobile) */}
+        <div className="md:hidden flex items-center gap-2">
+          {user && (
+            <>
+              {user.photoURL && (
+                <img
+                  className="w-8 h-8 rounded-full"
+                  src={user.photoURL}
+                  alt="User"
+                />
+              )}
+              <div className="text-sm font-semibold">
+                {user.displayName}
+              </div>
+            </>
+          )}
+        </div>
 
-        {/* Mobile Menu Button */}
+        {/* Desktop User Info */}
+        <div className="hidden md:flex items-center gap-4">
+          {user && (
+            <>
+              <div className="text-lg font-semibold">
+                Welcome, {user.displayName}, {user.email}
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Mobile Menu Toggle */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-2xl focus:outline-none"
@@ -48,11 +70,19 @@ const Navbar = () => {
               <FaUser /> My Profile
             </Link>
           )}
-          <Link to="/about-dev" className="flex items-center gap-2 hover:text-yellow-400">
-            <FaInfoCircle /> About Dev
-          </Link>
 
-          {/* Authentication Section */}
+          {/* User Avatar */}
+          {user && user?.photoURL && (
+            <div className="ml-2">
+              <img
+                className="w-8 h-8 rounded-full"
+                src={user?.photoURL}
+                alt="User"
+              />
+            </div>
+          )}
+
+          {/* Auth Buttons */}
           {user ? (
             <button
               onClick={handleLogOut}
@@ -87,11 +117,8 @@ const Navbar = () => {
               <FaUser /> My Profile
             </Link>
           )}
-          {/* <Link to="/about-dev" className="flex items-center gap-2 hover:text-yellow-400">
-            <FaInfoCircle /> About Dev
-          </Link> */}
 
-          {/* Authentication Section */}
+          {/* Auth Buttons */}
           {user ? (
             <button
               onClick={handleLogOut}
