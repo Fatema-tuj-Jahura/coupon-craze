@@ -14,8 +14,12 @@ import Brands from './components/Brands/Brands';
 import Brand from './components/Brand/Brand';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyProfile from './components/MyProfile/MyProfile';
-
+import ErrorPage from './components/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
+  {
+    path: "*", 
+    element: <ErrorPage></ErrorPage>,
+  },
   {
     path: "/",
     element: <Root></Root>,
