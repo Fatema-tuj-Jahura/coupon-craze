@@ -66,7 +66,7 @@ const Navbar = () => {
             <FaBuilding /> Brands
           </Link>
           {user && (
-            <Link to="/my-profile" className="flex items-center gap-2 hover:text-yellow-400">
+            <Link to='/my-profile' className="flex items-center gap-2 hover:text-yellow-400">
               <FaUser /> My Profile
             </Link>
           )}
