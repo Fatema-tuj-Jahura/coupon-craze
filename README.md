@@ -6,8 +6,7 @@ Welcome to **Coupon Craze** — a sleek and responsive React web application whe
 
 ## Live Website
 
-> [Visit Coupon Craze 🚀](#)  
-*(https://coupon-craze.web.app/)*
+> [Visit Coupon-Craze ](https://coupon-craze.web.app/)
 
 ---
 
