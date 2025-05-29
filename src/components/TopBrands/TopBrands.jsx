@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 import CouponsData from '../../../public/CouponsData.json';
-
+import 'animate.css';
 const TopBrands = () => {
   return (
     <div className="bg-green-50 py-10 px-4 md:px-10">
-      <h2 className="text-3xl font-bold text-center text-orange-500 mb-8">
+      <h2 className="text-3xl font-bold text-center text-orange-500 mb-8 animate__animated animate__fadeInDown animate__delay-3s">
         Top Brands
       </h2>
 

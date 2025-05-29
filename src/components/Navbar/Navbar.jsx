@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import logo from '../../assets/Logo.png';
 import { FaHome, FaBuilding, FaUser, FaBars, FaTimes } from 'react-icons/fa';
+import 'animate.css';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -20,7 +21,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="h-10" />
         </Link>
 
-        {/* Mobile User Info (always visible in mobile) */}
+        {/* Mobile User Info */}
         <div className="md:hidden flex items-center gap-2">
           {user && (
             <>
@@ -42,8 +43,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           {user && (
             <>
-              <div className="text-lg font-semibold">
-                Welcome, {user.displayName}, {user.email}
+              <div className="text-lg font-semibold animate__animated animate__zoomIn animate__delay-5s animate__slower">
+                Welcome {user.displayName}, {user.email}
               </div>
             </>
           )}
